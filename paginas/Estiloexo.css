@@ -1,0 +1,102 @@
+body{
+    font-family: arial, helvetica;
+    background: #1ED8C2;
+}
+.header {
+    background: #333;
+    color: white; 
+    padding: 2rem 0;
+    position: fixed;
+    left:0;
+    top:0;
+    width: 100%;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.logo-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.logo{
+    letter-spacing: 15px;
+    font-size: 1.4em;
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+.navigation ul li{
+    display: inline-block;
+  }
+  .navigation ul li a{
+      display: block;
+      padding: 0.5rem 1rem;
+    transition: all 0.4s linear;
+    border-radius: 5px;
+    }
+  .navigation ul li a:hover{
+      background: #4a4a4a;
+  }
+.main{
+    padding: 12rem;
+}
+div.ficha {
+  border: 1px solid #344cd3;
+  margin: 15px;
+  width: 250px;
+  height: 120px;
+  float: left;
+}
+div.ficha img {
+  border: 2px solid #618ff1;
+  margin: 3px;
+  float: left;
+}
+div.ficha img:hover {
+  border-color: #12546e;
+}
+div.ficha p {
+  margin: 3px;
+  line-height: 1.3em;
+  font-size: 90%;
+  color: #0d265c;
+}
+div.ficha p.cien {
+  margin-top: 1em;
+  font-style: oblique;
+  color: #0d81c4;
+}
+div.ficha_doble {
+  width: 530px;
+}
+table#flores {
+  border-bottom-style: solid;
+  font-size: 90%;
+}
+table#flores .alterna {
+  background-color: #f5e4cc;
+}
+div.redondo {
+  margin: 0 20px 20px;
+  background-color: #f5e4cc;
+  clear: both;
+}
+div.red_arriba, div.red_arriba div, div.red_abajo, div.red_abajo div {
+  height: 25px;
+  background-repeat: no-repeat;
+
+}
+div.redondo div.contenido {
+  margin: 0 25px;
+}
+div.redondo_borde {
+  border: 1px solid #0e4252;
+  color: #3d2e2a;
+  background-color: #f0d7b5;
+}

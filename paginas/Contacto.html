@@ -1,0 +1,131 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type" />
+    <link rel="stylesheet" href="EstiloContacto.css" type="text/css" />
+    <link  rel="icon"   href="logo.jpg" type="image/png" />
+    <script type="text/javascript" src="js/funciones.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container logo-nav-container">
+                <a href="#" class="logo">FLORAMICS</a>
+                <nav class="navigation">
+            <ul>
+              <li><a href ="../paginas/sintex.html">Inicio</a></li>
+              <li><a href="Flores.html">Flores</a></li>
+              <li><a href="Contacto.html">Contacto</a></li>
+              <li><a href="Nosotros.html">Nosotros</a></li>
+              <li><a href="Noticias.html">Noticias</a></li>
+            </ul>
+         </nav>
+            </div>
+    </header>
+    <div>
+    <script type="text/javascript">
+    function validarForm(formulario) {
+      if(formulario.nombre.value.length==0) { //¿Tiene 0 caracteres?
+        formulario.nombre.focus();    // Damos el foco al control
+        alert('No has escrito tu nombre'); //Mostramos el mensaje
+        return false; //devolvemos el foco
+      }
+      if(formulario.email1.value.length==0) {
+        formulario.email1.focus();
+        alert('No has escrito tu e-Mail');
+        return false;
+      }
+      if(formulario.email1.value!=formulario.email2.value) {
+        formulario.email1.focus();
+        alert('Los e-Mails no coinciden');
+        return false;
+      }
+      if(formulario.consulta.value.length==0) {
+        formulario.consulta.focus();
+        alert('No has escrito ninguna consulta');
+        return false;
+      }
+      return true;
+    }
+    </script>
+    <script type="text/javascript">cargarMenu('contacto');</script>
+    <noscript>
+    <div class="sinscript">Atenci&oacute;n: Necesitas habilitar JavaScript para poder navegar por este sitio.</div>
+    </noscript>
+    </div>
+    <div class="redondo">
+    <div class="red_arriba"><div></div>
+    </div>
+    <div class="contenido">
+        
+    <h1>Contacto</h1>
+    <p>Para ponerte en contacto con nosotros, rellena el siguiente formulario:</p>
+    <h1>Contacto</h1>
+    <p>Para ponerte en contacto con nosotros, rellena el siguiente formulario:</p>
+    
+    <div class="redondo_borde">
+    <div class="red_arriba">
+    <div></div>
+    </div>
+    <div class="contenido">
+    <form method="post" action="enviar_mail.php" onsubmit="return validarForm(this);">
+    <table style="text-align: left; width: 100%;" cellpadding="3" rules="rows">
+    <tbody>
+    <tr>
+    <td>Nombre:</td>
+    <td><input type="text" name="nombre" id="nombre" /></td>
+    </tr>
+    <tr>
+      <td>Correo electronico:</td>
+      <td><input type="text" name="email1" id="email1" /></td>
+    </tr>
+    <tr>
+      <td>Repite tu correo:</td>
+      <td><input type="text" name="email2" id="email2" /></td>
+    </tr>
+    <tr>
+    <td>Como nos conociste?</td>
+    <td>
+    <select name="conocio" id="conocio">
+       <option selected="selected"></option>
+       <option>Un amigo</option>
+       <option>Un blog</option>
+       <option>Un buscador</option>
+       <option>Otros</option>
+    </select></td>
+    </tr>
+    <tr>
+      <td>Tu pregunta es referente a:</td>
+      <td><label><input type="radio" name="referente" id="ref_web" value="web" /> 
+        La Web </label><br />
+      <label><input type="radio" name="referente" id="ref_fotos" value="fotos" /> 
+      Las fotos </label><br />
+      <label><input type="radio" name="referente" id="ref_asociacion" value="asociacion" /> 
+      La asocioacion </label>
+      </td>
+    </tr>
+    
+    <tr>
+    <td colspan="2">Escribe lo que
+    quieres preguntarnos:</td>
+    </tr>
+    <tr>
+    <td class="centrado" colspan="2">
+    <textarea cols="50" rows="5" name="consulta"></textarea></td>
+    </tr>
+    <tr>
+    <td class="centrado" colspan="2"><input type="submit" value="Enviar" />
+      <input type="reset" value="Restablecer" /></td>
+    </tr>
+    </tbody>
+    </table>
+    </form>
+    </div>
+    <div class="red_abajo">
+    <div></div>
+    </div>
+    </div>
+    </div>
+    <div class="red_abajo">
+    <div></div>
+    </div>
+    </div>
+     </body>
+    </html>
